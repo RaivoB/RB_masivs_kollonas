@@ -1,0 +1,5 @@
+ID Vards Uzvards Vecums 
+1  0 Janis Lapa 21788138 Rekina Nmr. 040076    
+2  1 Peters Berzins 22295018 Rekina Nmr. 012809    
+3  2 Igors Janka 21354122 Rekina Nmr. 039654    
+4  3 Edgars Berzins 22959506 Rekina Nmr. 020141    

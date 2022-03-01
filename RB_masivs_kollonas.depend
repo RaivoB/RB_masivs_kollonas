@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1643105693 source:z:\programmesana_1\rb_masivs_kollonas\main.cpp
+	<iostream>
+	<ctime>
+	<stdlib.h>
+	<string>
+
