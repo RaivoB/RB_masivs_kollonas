@@ -10,6 +10,7 @@ int main()
 
     string vardi[8];
     string uzvards[8];
+    string produkti[8];
     int a = 0;
     int b = 0;
     int c = 0;
@@ -41,6 +42,18 @@ int main()
        cout << uzvards[j] << endl;
     }
      cout << endl;
+      for(int k = 0; k < 8; k++)
+    {
+         cout <<"Produkti :" << k << endl;
+         cin >> produkti[k];
+    }
+    cout << endl;
+    cout << endl;
+    for(int k = 0; k < 8; k++)
+    {
+       cout << produkti[k] << endl;
+    }
+    cout << endl;
     cout << endl;
 
 
@@ -67,8 +80,18 @@ int main()
          }
          if ( y == 3)
          {
-             Rand_Mas[x][y] = to_string(rand()%10000000);
+             Rand_Mas[x][y] = "2"+to_string(((rand()%99999)+1000000));
          }
+
+         if ( y == 4)
+         {
+             Rand_Mas[x][y] = "00"+to_string(((rand()%9999)+10000));
+         }
+         if ( y == 5)
+         {
+             Rand_Mas[x][y] = produkti[rand()%8];
+         }
+
 
 
         cout <<  Rand_Mas[x][y] << " ";
@@ -94,9 +117,10 @@ int main()
  }
  cout << endl;
     cout << endl;
-cout << "Persona "<< vardi[c] <<" tika atrasts " << reizes << " reizes " << endl;
+cout << "Persona "<< vardi[c] <<" nopirka "<< produkti[c] << " tika atrasts " << reizes << " reizes " << endl;
 
     return 0;
 }
 // Edgars Igors Kristaps Rainers Ingolfs Peters Janis Rolands
 // Berzins Abolins Cakars Biezins Alpa Lapa Lietins Janka
+// piens maize burkani aboli kola kefirs cipsi sviests
