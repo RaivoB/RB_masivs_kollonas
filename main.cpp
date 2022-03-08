@@ -2,12 +2,15 @@
 #include <ctime>
 #include <stdlib.h>
 #include <string>
+#include <fstream>
+#include <sstream>
 using namespace std;
 
 int main()
 {
     srand(time(0));
-
+     fstream file;
+     string vards, uzvardi, produkts, filename;
     string vardi[8];
     string uzvards[8];
     string produkti[8];
@@ -15,11 +18,22 @@ int main()
     int b = 0;
     int c = 0;
     int reizes = 0;
+
+    filename = "vardi.txt";
+
+    file.open(filename.c_str());
+
+
+
+
+
     cout << "Ludzu ievadiet personu vardus" << endl;
     for(int i = 0; i < 8; i++)
     {
          cout <<"Personas :" << i << endl;
-         cin >> vardi[i];
+         file >> vards;
+        cout << vards << endl;
+       vardi[i] = vards;
     }
     cout << endl;
     cout << endl;
@@ -28,12 +42,20 @@ int main()
        cout << vardi[i] << endl;
     }
     cout << endl;
+    file.close();
+
+
+    filename = "uzvardi.txt";
+    file.open(filename.c_str());
+
 
     cout << "Ludzu ievadiet personu uzvardus" << endl;
     for(int j = 0; j < 8; j++)
     {
          cout <<"Personas uzvardi :" << j << endl;
-         cin >> uzvards[j];
+         file >> uzvardi;
+         cout << uzvardi << endl;
+         uzvards[j] = uzvardi;
     }
     cout << endl;
     cout << endl;
@@ -42,10 +64,19 @@ int main()
        cout << uzvards[j] << endl;
     }
      cout << endl;
+
+      file.close();
+
+      filename = "produkti.txt";
+    file.open(filename.c_str());
+
       for(int k = 0; k < 8; k++)
     {
          cout <<"Produkti :" << k << endl;
-         cin >> produkti[k];
+         file >> produkts;
+         cout << produkts <<endl;
+         produkti[k] = produkts;
+
     }
     cout << endl;
     cout << endl;
@@ -55,6 +86,7 @@ int main()
     }
     cout << endl;
     cout << endl;
+    file.close();
 
 
     cout << "Ievadiet 2D masinu izmerus, robeza no 3 lidz 9" << endl;
