@@ -93,6 +93,9 @@ int main()
     cin >> a;
     cin >> b;
 
+ofstream mans_fails;
+mans_fails.open("dati.txt",ios::out);
+
     string Rand_Mas[a][b];
     for(int x = 0; x < a; x++)
     {
@@ -123,11 +126,14 @@ int main()
          {
              Rand_Mas[x][y] = produkti[rand()%8];
          }
+         mans_fails << Rand_Mas[x][y] << " ";
 
 
 
         cout <<  Rand_Mas[x][y] << " ";
      }
+     cout << ' /n';
+     mans_fails << endl;
      cout << endl;
 
     }
@@ -150,6 +156,8 @@ int main()
  cout << endl;
     cout << endl;
 cout << "Persona "<< vardi[c] <<" nopirka "<< produkti[c] << " tika atrasts " << reizes << " reizes " << endl;
+
+mans_fails.close();
 
     return 0;
 }

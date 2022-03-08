@@ -1,5 +1,7 @@
-ID Vards Uzvards Vecums 
-1  0 Janis Lapa 21788138 Rekina Nmr. 040076    
-2  1 Peters Berzins 22295018 Rekina Nmr. 012809    
-3  2 Igors Janka 21354122 Rekina Nmr. 039654    
-4  3 Edgars Berzins 22959506 Rekina Nmr. 020141    
+0 Rolands Cakars 21026965 0013272 sviests  
+1 Rainers Alpa 21026574 0019825 piens  
+2 Janis Abolins 21009650 0010360 cipsi  
+3 Rolands Janka 21011182 0017645 piens  
+4 Kristaps Janka 21000462 0010899 piens  
+5 Janis Janka 21026619 0014411 maize  
+6 Edgars Alpa 21026992 0016151 kola  
